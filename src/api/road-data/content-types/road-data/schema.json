@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "road_datas",
+  "info": {
+    "singularName": "road-data",
+    "pluralName": "road-datas",
+    "displayName": "RoadData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CrashDate": {
+      "type": "datetime"
+    },
+    "CrashLocation": {
+      "type": "string"
+    },
+    "CrashType": {
+      "type": "enumeration",
+      "enum": [
+        "Vehicle v/s Vehicle",
+        "Vehicle v/s Pedestrian",
+        "Vehicle v/s Object",
+        "Other"
+      ]
+    }
+  }
+}

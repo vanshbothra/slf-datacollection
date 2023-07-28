@@ -4,7 +4,8 @@
   "info": {
     "singularName": "road-data",
     "pluralName": "road-datas",
-    "displayName": "RoadData"
+    "displayName": "Kota Crash Data",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,7 @@
     "CrashDate": {
       "type": "datetime"
     },
-    "CrashLocation": {
+    "CrashDistrict": {
       "type": "string"
     },
     "CrashType": {
@@ -25,6 +26,172 @@
         "Vehicle v/s Object",
         "Other"
       ]
+    },
+    "Jurisdiction_of_Police_Station": {
+      "type": "enumeration",
+      "enum": [
+        "Anantpura",
+        "Bhimganjmandi",
+        "Borkhera",
+        "Dadabari",
+        "Gumanpura",
+        "Kaithunipole",
+        "Kishorpura",
+        "Kotwali",
+        "Mahaveer Nagar",
+        "RK Puram",
+        "Railway Colony",
+        "Ranpur",
+        "Udhyognagar",
+        "Vigyannagar",
+        "Jawahar Nagar",
+        "Kunhadi"
+      ]
+    },
+    "Type_of_Crash": {
+      "type": "enumeration",
+      "enum": [
+        "Head-on Collision",
+        "Object Impact",
+        "Rear End Collision",
+        "Sideswipe",
+        "Rollover",
+        "Multiple Vehicle Pile-Up",
+        "Single Vehicle Accident",
+        "Side-impact Collision",
+        "Pedestrian Crash",
+        "Others",
+        "Unknown"
+      ]
+    },
+    "Road_Feature": {
+      "type": "enumeration",
+      "enum": [
+        "Straight",
+        "Curve",
+        "Gradient",
+        "Bridge/Culvert",
+        "Intersection",
+        "Can't Identify",
+        "Other"
+      ]
+    },
+    "Number_of_Fatalities": {
+      "type": "integer"
+    },
+    "Highest_Injury": {
+      "type": "enumeration",
+      "enum": [
+        "Fatal",
+        "Serious Injury",
+        "Minor Injury",
+        "No Injury",
+        "Unknown",
+        "Not Applicable"
+      ]
+    },
+    "Number_of_Grievously_Injured_People": {
+      "type": "integer"
+    },
+    "Type_of_Vehicle_1": {
+      "type": "enumeration",
+      "enum": [
+        "Car/ Jeep/ Taxi",
+        "Truck",
+        "Bus",
+        "Mini-Bus",
+        "Tractor Trailer",
+        "M2W",
+        "Three Wheeler",
+        "Cycle/ NMT",
+        "Farm Tractor",
+        "Others",
+        "Unknown",
+        "Not Applicable"
+      ]
+    },
+    "Type_of_Vehicle_2": {
+      "type": "enumeration",
+      "enum": [
+        "Car/ Jeep/ Taxi",
+        "Truck",
+        "Bus",
+        "Mini-Bus",
+        "Tractor Trailer",
+        "M2W",
+        "Three Wheeler",
+        "Cycle/ NMT",
+        "Farm Tractor",
+        "Others",
+        "Unknown",
+        "Not Applicable"
+      ]
+    },
+    "FIR_Summary": {
+      "type": "text"
+    },
+    "Crash_Contributing_Factor": {
+      "type": "enumeration",
+      "enum": [
+        "Speeding",
+        "Oversteer / Understeer",
+        "Driving too slow for conditions",
+        "Careless driving",
+        "Sudden braking",
+        "Driver Inattention",
+        "Impaired by alcohol",
+        "Impaired by drugs, illicit or medicinal",
+        "Distracted driving (mobile/ talking/ music)",
+        "Sleep/Fatigue/Drowsiness",
+        "Failed to judge vehicle's path or speed",
+        "Parked vehicle on road",
+        "Wrong side driving",
+        "Following too closely",
+        "Overtaking on left side of vehicle",
+        "Disobeyed traffic signal",
+        "Defective - Tires",
+        "Unknown mechanical issue",
+        "Overloading",
+        "Cargo not secured properly",
+        "Vision obstruction inside vehicle",
+        "Slippery road surface",
+        "Poor/defective road surface",
+        "Sharp Curvature",
+        "Animal/object on roadway",
+        "Rain/Fog",
+        "Poor workzone treatment",
+        "Others"
+      ]
+    },
+    "Injury_Contributing_Factor": {
+      "type": "enumeration",
+      "enum": [
+        "Seat belt not used",
+        "Helmet not used",
+        "Improper use of helmet",
+        "Occupants in cargo area",
+        "Overloading of occupants",
+        "Lack of first-aid skills",
+        "Passenger Compartment Intrusion - Underride/Override",
+        "Knock-down (for Pedestrians, M2W & M3W occupants)",
+        "Illegal alteration or fitment-Fuel kit,gaurds",
+        "Protruding/oversized cargo",
+        "Fire",
+        "Ejection",
+        "Object impact - road side - trees/structures",
+        "EMS unavailability",
+        "Distance to hospital",
+        "Other"
+      ]
+    },
+    "FIR_Number": {
+      "type": "integer"
+    },
+    "Lattitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
     }
   }
 }
